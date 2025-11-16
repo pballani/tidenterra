@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tidenterra</title>
+  <!-- Google Font for cool overlay text -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      /* Background Image */
+      min-height: 100vh;
+    }
+    /* Dark overlay on background image */
+    .overlay {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url('tidenterra.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      /* Optional blur */
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0 20px;
+    }
+    /* Magazine Title */
+    .overlay h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .overlay p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    /* About Section */
+    .about {
+      background-color: #e6f4e6;
+      color: #333;
+      padding: 120px 60px;
+    }
+    .about h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .about p {
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .letter {
+  background-color: #e6f4e6;
+  color: #333;
+  padding: 80px 20px;
+}
+
+.letter-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 2.5;
+}
+
+.letter h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #2b4c2f;
+}
+
+
+.transition-heading {
+  margin: 40px auto 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #444;
+  font-family: 'Playfair Display', serif;
+}
+
+.letter .signature {
+  margin-top: 40px;
+  font-style: italic;
+  color: #444;
+}
+    /* Team Profiles Section */
+    .team {
+      background-color: #fff;
+      color: #333;
+      padding: 60px 20px;
+    }
+    .team h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.profile-card {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  width: 300px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.profile-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.profile-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .overlay h1 { font-size: 3rem; }
+      .overlay p { font-size: 1rem; }
+      .about h2, .team h2 { font-size: 2rem; }
+      .profiles { flex-direction: column; align-items: center; }
+    }
+
+    .hero-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fdfdfd;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-link:hover {
+  color: #d2e4c4;
+  border-color: #d2e4c4;
+}
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="overlay">
+    <h1>Tidenterra</h1>
+    <a href="#submit" class="hero-link">Send Us a Submission →</a>
+  </div>
+
+  <!-- About Section -->
+  <section class="letter">
+    <h2>Letter from the Editors</h2>
+    <p>
+      Sustainability and climate change are complex and often overwhelming topics to engage with. Inspired by lessons from the Environmental Studies Department here at UCSB, our goal is to distill these challenges into an engaging format that sparks curiosity and fosters understanding between one another.
+    </p>
+    <p>
+      We aim to make environmental education inclusive and lower the barriers created by dense or complex scientific language that can make understanding what’s happening in our world scary.
+    </p>
+    <p>
+      This is our first issue, and we hope to gauge how interested people would be in our left-brain + right-brain love child. We want to extend an open invitation for feedback — or to contribute to a future issue! We plan to print every quarter and would love to feature your articles, poems, art pieces, book/activity recs, club highlights, or anything IV-sustainability related.
+    </p>
+    <p>
+      Reach out to us or check out the last page for details!
+    </p>
+    <p class="signature">
+      — Evelyn Tsang & Sanjana Sujeet<br>
+      ewtsang@ucsb.edu & sanjanasujeet@ucsb.edu<br>
+      tidenterramag@gmail.com · @TidenTerra
+    </p>
+  </section>
+
+  <!-- Team Profiles Section -->
+  <section class="team">
+    <h2>Meet the Creators</h2>
+    <div class="profiles">
+      <div class="profile-card">
+        <img src="/mnt/data/creator1.jpg" alt="Sanjana Sujeet">
+        <h3>Sanjana Sujeet</h3>
+        <p><em>Art Director</em><br>
+        Blending creativity and sustainability, Sanjana curates the artistic direction of each issue.</p>
+      </div>
+      <div class="profile-card">
+        <img src="/mnt/data/creator2.jpg" alt="Evelyn Tsang">
+        <h3>Evelyn Tsang</h3>
+        <p><em>Founder & Editor</em><br>
+        Passionate about environmental storytelling and visual arts, Evelyn leads our editorial vision.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
